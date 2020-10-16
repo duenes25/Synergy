@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Synergy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/318fd1fab2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- NavBar-->
+    <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+      <!-- THUMBNAIL LOGO -->
+      <a class="navbar-brand" href="index.html" style="margin-left:15px">
+      <img class="w-50 h-50" src="assets/logo.png" alt="" >
+      </a>
+      <!-- THE HAMBURGER MENU -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- THE NAV LINKS -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item">
+            <a class="nav-link" href="industries.html">Industries</a>
+          </li>
+          <li class="nav-item" style="margin-left:15px">
+            <a class="navbar-brand" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="margin-right: 30px" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="fab fa-facebook fa-2x" style="margin-top: 2px;margin-right: 30px;color: #3b579d"></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="fab fa-twitter fa-2x" style="margin-top: 2px;margin-right: 30px; color: #2caae1"></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="fab fa-instagram fa-2x" style="margin-top: 2px;margin-right: 30px; color: #dc4a38"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- MAIN Section-->
+    <div>
+    <!--
+      <div style="background-image: url('assets/background.png');
+      background-repeat: no-repeat;
+      background-size: 100% 30%;
+      background-position: center center;
+      background-position: left top, right top
+      ">
+      -->
+    <div class="container text-center" style="margin-top:65px">
+      <!-- THE LOGO -->
+      <a href="index.html">
+        <!--<video loop src="assets/logo_clip.mp4" muted autoplay />-->
+        <img src="assets/logo2x.png" alt="">
+      </a>
+      <h1 class="display-4" style="margin-top:40px">What We Do</h1>
+    </div>
+    <!-- CARDS SECTION -->
+    <div class="card border-light mx-auto" style="margin-top:60px">
+      <div class="card-body">
+        <div class="row justify-content-center" >
+          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-4 d-flex" >
+
+            <!-- ACCORDION SECTION -->
+            <div id="accordion">
+              <!-- FIRST COLLAPSIBLE -->
+              <div class="card border-light">
+                <button class="btn text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="card-header bg-transparent" id="headingOne">
+                      <h3>
+                        Strategy and Performance <i class="fas fa-angle-down float-right"></i>
+                      </h3>
+                </div>
+                </button>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Every step of the way, Synergy5 works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals
+                    <div style="margin-top:15px" >
+                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SECOND COLLAPSIBLE -->
+              <div class="card border-light">
+                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="card-header bg-transparent" id="headingTwo">
+                    <h3>
+                      Talent Development <i class="fas fa-angle-down float-right"></i>
+                    </h3>
+                </div>
+              </button>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div style="margin-top:15px" >
+                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- THIRD COLLAPSIBLE -->
+              <div class="card border-light">
+                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <div class="card-header bg-transparent" id="headingThree">
+                  <h3>
+                    Leadership <i class="fas fa-angle-down float-right"></i>
+                  </h3>
+                </div>
+                </button>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div style="margin-top:15px" >
+                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FOURTH COLLAPSIBLE -->
+              <div class="card border-light">
+                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <div class="card-header bg-transparent" id="headingFour">
+                  <h3>
+                    Start-up Businesses and Strategic Planning <i class="fas fa-angle-down float-right"></i>
+                  </h3>
+                </div>
+                </button>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div style="margin-top:15px" >
+                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-4 d-flex" >
+            <!-- IMAGE SECTION -->
+            <div class="card border-light flex-fill   mx-auto">
+              <img class="card-img-top float-right" src="assets/Picture2.png" alt="Image not found">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="jumbotron text-left" style="margin-bottom:0">
+      COPYRIGHT &#169; 2020 SYNERGY5 - ALL RIGHTS RESERVED.
+    </div>
+  </body>
+</html>
