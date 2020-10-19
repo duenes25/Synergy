@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Synergy</title>
+    <title>Synergy5</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -10,6 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/318fd1fab2.js" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+
   </head>
   <body>
     <!-- NavBar-->
@@ -49,6 +51,8 @@
         </ul>
       </div>
     </nav>
+
+
     <!-- MAIN Section-->
     <div>
     <!--
@@ -71,13 +75,13 @@
     <div class="card border-light mx-auto" style="margin-top:60px">
       <div class="card-body">
         <div class="row justify-content-center" >
-          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-4 d-flex" >
+          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-5 d-flex" >
 
             <!-- ACCORDION SECTION -->
             <div id="accordion">
               <!-- FIRST COLLAPSIBLE -->
               <div class="card border-light">
-                <button class="btn text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn text-left" data-toggle="collapse"  onclick="strategySelected()" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div class="card-header bg-transparent" id="headingOne">
                       <h3>
                         Strategy and Performance <i class="fas fa-angle-down float-right"></i>
@@ -86,17 +90,19 @@
                 </button>
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                   <div class="card-body">
-                    Every step of the way, Synergy5 works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals
+                    <div class="container">
+                    Every step of the way, <b>Synergy</b><font style="color:red"><sup>5</sup></font> works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals
                     <div style="margin-top:15px" >
-                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                      <a class="card-link" href="#" >Learn More</a>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
 
               <!-- SECOND COLLAPSIBLE -->
               <div class="card border-light">
-                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn collapsed text-left" data-toggle="collapse" onclick="talentSelected()" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <div class="card-header bg-transparent" id="headingTwo">
                     <h3>
                       Talent Development <i class="fas fa-angle-down float-right"></i>
@@ -105,16 +111,18 @@
               </button>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="container">
+                    In tough times, organizations that can adjust their strategies and align their people accordingly will thrive.  <b>Synergy</b><font style="color:red"><sup>5</sup></font> helps you leverage your unique culture and employee abilities to create talent strategies that make business success consistent
                     <div style="margin-top:15px" >
-                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                      <a class="card-link" href="#" >Learn More</a>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
               <!-- THIRD COLLAPSIBLE -->
               <div class="card border-light">
-                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn collapsed text-left" data-toggle="collapse" onclick="leadershipSelected()" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <div class="card-header bg-transparent" id="headingThree">
                   <h3>
                     Leadership <i class="fas fa-angle-down float-right"></i>
@@ -123,16 +131,18 @@
                 </button>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="container">
+                    <b>Synergy</b><font style="color:red"><sup>5</sup></font> has spent more than 2 decades researching and understanding how the workplace is changing by industry
                     <div style="margin-top:15px" >
-                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                      <a class="card-link" href="#" >Learn More</a>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
               <!-- FOURTH COLLAPSIBLE -->
               <div class="card border-light">
-                <button class="btn collapsed text-left" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button href="strategy.html" class="btn collapsed text-left" data-toggle="collapse" onclick="planningSelected()" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 <div class="card-header bg-transparent" id="headingFour">
                   <h3>
                     Start-up Businesses and Strategic Planning <i class="fas fa-angle-down float-right"></i>
@@ -141,20 +151,39 @@
                 </button>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="container">
+                    <b>Synergy</b><font style="color:red"><sup>5</sup></font> works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals.
                     <div style="margin-top:15px" >
-                      <a class="card-link stretched-link" href="#" >Learn More</a>
+                      <a class="card-link" href="#" >Learn More</a>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-4 d-flex" >
+          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-5 d-flex" >
             <!-- IMAGE SECTION -->
+            <div id="strategyDiv">
             <div class="card border-light flex-fill   mx-auto">
-              <img class="card-img-top float-right" src="assets/Picture2.png" alt="Image not found">
+              <img class="card-img-top float-right" src="assets/Picture1.png" alt="Image not found">
             </div>
+          </div>
+          <div id="talentDiv" style="display:none">
+          <div class="card border-light flex-fill   mx-auto">
+            <img class="card-img-top float-right" src="assets/Picture2.png" alt="Image not found">
+          </div>
+        </div>
+        <div id="leadershipDiv" style="display:none">
+        <div class="card border-light flex-fill   mx-auto">
+          <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
+        </div>
+      </div>
+      <div id="planningDiv" style="display:none">
+      <div class="card border-light flex-fill   mx-auto">
+        <img class="card-img-top float-right" src="assets/Picture4.png" alt="Image not found">
+      </div>
+    </div>
           </div>
         </div>
       </div>
