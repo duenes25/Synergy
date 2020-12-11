@@ -44,13 +44,21 @@
     .jumbotron{
       background-color: var(--appcolor) !important;
     }
-    .custom-circle {
-      width: 350px;
-      height: 320px;
-      background-color: white;
-      opacity: 0.5;
+    .circle-container{
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* 1:1 Aspect Ratio */
+      background: rgba(255, 255, 255, .5);
     }
-
+    .circle-container-text{
+      position:  absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    
+      color: Black;
+    }
     </style>
 
   </head>
@@ -115,24 +123,18 @@
           <!-- Circle Section -->
           <div class="jumbotron" style="background-image: url('assets/winbig.png');background-size: cover;">
             <div class="row" >
-              <div class="col-xs-12 col-sm-12  col-md-6  col-lg-6 col-xl-5 d-flex">
-                <div class="card border-light text-left flex-fill  mx-auto rounded-circle" style="display:block !important;">
-                  <div class="card-body">
+              <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 d-flex">
+                <div class="circle-container rounded-circle text-center justify-content-center align-self-center" >
+                  <div class="circle-container-text">
                     <h1 class="text-center" style="margin-top: 50px"> Win & Win Big</h1>
-                    <hr width="25%" style="height:3px;background-color:black;margin-top: 50px;margin-bottom: 50px" />
-                    <h4 class="text-left" style="margin-bottom:150px;margin-left:30px;">For growth-minded organizations, in highly competitive sectors, seeking to augment complex workflows or to build scalable and sustainable infrastructure, Synergy5 is the strategic catalyst for systematic change leading to longevity and profitability.</h4>
+                    <hr width="25%" style="height:3px;background-color:black;margin-top:30px;margin-bottom: 20px" />
+                    <h5 class="text-left" style="margin-left:30px;margin-right:30px;">For growth-minded organizations, in highly competitive sectors, seeking to augment complex workflows or to build scalable and sustainable infrastructure
+                    </br>Synergy5 is the strategic catalyst for systematic change leading to longevity and profitability.</h5>
                   </div>
                 </div>
-              </div>
-              </div>
-             <div class="custom-circle rounded-circle text-center">
+            </div>
+          </div>
 
-               <div class="col text-center justify-content-center align-self-center">
-                   <h1> Win & Win Big</h1>
-                 <hr width="50%" style="height:3px;background-color:black;" />
-                 <h4 class="text-left">For growth-minded organizations, in highly competitive sectors, seeking to augment complex workflows or to build scalable and sustainable infrastructure, Synergy5 is the strategic catalyst for systematic change leading to longevity and profitability.</h4>
-               </div>
-             </div>
 
           </div>
 
