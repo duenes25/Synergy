@@ -6,47 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/318fd1fab2.js" crossorigin="anonymous"></script>
-    <script src="js/myscript.js"></script>
+
+<!-- TODO  logo thumbnail-->
+    <link rel="shortcut icon" href="assets/banner_logo_transparent.png">
+    <link rel="icon" href="assets/banner_logo_transparent.png">
+
+    <style>
+    h5,h4,h2,h2{
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1{
+        font-family: 'Merriweather', serif;
+    }
+    :root{
+      --appcolor: #141754;
+    }
+    #logo {
+    	vertical-align:middle;
+    }
+    .navbar-custom {
+          background-color: var(--appcolor);
+      }
+    .navbar-brand span {
+    	font-size:2rem;
+    	line-height:1.2;
+    	font-weight: 200;
+    	display:inline-block;
+    	vertical-align:middle;
+    	padding:0 0 0 15px;
+    }
+    .navbar-brand b {
+    	display:block;
+    	font-size:50%;
+    	line-height:1;
+    }
+    .navbar-nav {
+    	margin-left:auto;
+    }
+    .jumbotron{
+      background-color: var(--appcolor) !important;
+    }
+    .circle-container{
+      position: relative;
+      width: 100%;
+      padding-top: 100%; /* 1:1 Aspect Ratio */
+      background: rgba(255, 255, 255, .8);
+    }
+    .circle-container-text{
+      position:  absolute;
+      top: 18%; left: 20%;
+      transform: translate(-10%,-10%);
+      color: Black;
+    }
+    .btn{
+      border: 2px solid var(--appcolor);
+      background-color: #ffff00 ;
+    }
+    input[type="text"] {
+      border: 0;
+      outline: 0;
+      border-bottom: 1px solid black;
+    }
+    textarea[type="text"] {
+      border: 1px solid black;
+    }
+    </style>
 
   </head>
   <body>
     <!-- NavBar-->
-    <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
-      <!-- THUMBNAIL LOGO -->
-      <a class="navbar-brand" href="index.html" style="margin-left:15px">
-      <img class="w-50 h-50" src="assets/logo.png" alt="" >
-      </a>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
+
+      <!-- Brand Logo -->
+        <a class="navbar-brand ml-xs-1 ml-sm-2 ml-md-3 ml-lg-4 ml-xl-5" href="index.html">
+          <img id="logo" class="w-50 h-50" alt="Logo" src="assets/banner_logo_transparent.png">
+        </a>
+
       <!-- THE HAMBURGER MENU -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <!-- THE NAV LINKS -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto" >
           <li class="nav-item">
-            <a class="nav-link" href="industries.html">Industries</a>
-          </li>
-          <li class="nav-item" style="margin-left:15px">
-            <a class="navbar-brand" href="services.html">Services</a>
+            <a class="navbar-brand" style="color:white !important" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" style="color:white !important" href="index.html">About us</a>
+          </li>
+          <li class="nav-item" style="margin-right:15px;">
+            <a class="nav-link" style="color:white !important" href="contact.html">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="margin-right: 30px" href="contact.html">Contact Us</a>
+            <a href="#" class="fab fa-instagram fa-2x" style="margin-top: 2px;margin-right: 30px; color:white"></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="fab fa-facebook fa-2x" style="margin-top: 2px;margin-right: 30px;color: #3b579d"></a>
+            <a href="#" class="fab fa-twitter fa-2x" style="margin-top: 2px;margin-right: 30px; color:white"></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="fab fa-twitter fa-2x" style="margin-top: 2px;margin-right: 30px; color: #2caae1"></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="fab fa-instagram fa-2x" style="margin-top: 2px;margin-right: 30px; color: #dc4a38"></a>
+            <a href="#" class="fab fa-facebook fa-2x" style="margin-top: 2px;margin-right: 30px;color:white"></a>
           </li>
         </ul>
       </div>
@@ -54,510 +119,315 @@
 
 
     <!-- MAIN Section-->
-    <div>
-<!--
-      <div style="background-image: url('assets/background2.png');
-      background-repeat: no-repeat;
-      background-size: 100% 30%;
-      background-position: center center;
-      background-position: left top, right top
-      ">
--->
-    <div class="container text-center" style="margin-top:65px">
-      <!-- THE LOGO -->
-      <a href="index.html">
-        <!--<video loop src="assets/logo_clip.mp4" muted autoplay />-->
-        <img src="assets/logo2x.png" alt="">
-      </a>
-      <h1 style="margin-top:40px">What We Do</h1>
-    </div>
-    <!-- CARDS SECTION -->
-    <div class="card border-light mx-auto" style="margin-top:60px">
-      <div class="card-body">
-        <div class="row justify-content-center" >
-          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-5 d-flex" >
-
-            <!-- ACCORDION SECTION -->
-            <div id="accordion">
-              <!-- FIRST COLLAPSIBLE -->
-              <div class="card border-light">
-                <button class="btn text-left" data-toggle="collapse"  onclick="strategySelected()" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                <div class="card-header bg-transparent" id="headingOne">
-                      <h3>
-                        Strategy and Performance <i class="fas fa-angle-down float-right"></i>
-                      </h3>
-                </div>
-                </button>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                    Every step of the way, <b>Synergy</b><font style="color:red"><sup>5</sup></font> works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals
-                    <div style="margin-top:15px" >
-                      <a class="card-link" href="#Strategy" >Learn More</a>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- SECOND COLLAPSIBLE -->
-              <div class="card border-light">
-                <button class="btn collapsed text-left" data-toggle="collapse" onclick="talentSelected()" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <div class="card-header bg-transparent" id="headingTwo">
-                    <h3>
-                      Talent Development <i class="fas fa-angle-down float-right"></i>
-                    </h3>
-                </div>
-              </button>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                    In tough times, organizations that can adjust their strategies and align their people accordingly will thrive.  <b>Synergy</b><font style="color:red"><sup>5</sup></font> helps you leverage your unique culture and employee abilities to create talent strategies that make business success consistent
-                    <div style="margin-top:15px" >
-                      <a class="card-link" href="#Talent" >Learn More</a>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <!-- THIRD COLLAPSIBLE -->
-              <div class="card border-light">
-                <button class="btn collapsed text-left" data-toggle="collapse" onclick="leadershipSelected()" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <div class="card-header bg-transparent" id="headingThree">
-                  <h3>
-                    Leadership <i class="fas fa-angle-down float-right"></i>
-                  </h3>
-                </div>
-                </button>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                    <b>Synergy</b><font style="color:red"><sup>5</sup></font> has spent more than 2 decades researching and understanding how the workplace is changing by industry
-                    <div style="margin-top:15px" >
-                      <a class="card-link" href="#Leadership" >Learn More</a>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-              <!-- FOURTH COLLAPSIBLE -->
-              <div class="card border-light">
-                <button href="strategy.html" class="btn collapsed text-left" data-toggle="collapse" onclick="planningSelected()" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                <div class="card-header bg-transparent" id="headingFour">
-                  <h3>
-                    Start-up Businesses and Strategic Planning <i class="fas fa-angle-down float-right"></i>
-                  </h3>
-                </div>
-                </button>
-                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                  <div class="card-body">
-                    <div class="container">
-                    <b>Synergy</b><font style="color:red"><sup>5</sup></font> works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals.
-                    <div style="margin-top:15px" >
-                      <a class="card-link" href="#Startup" >Learn More</a>
-                    </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-10  col-sm-10  col-md-6 col-lg-6  col-xl-5 d-flex" >
-            <!-- IMAGE SECTION -->
-            <div id="strategyDiv">
-            <div class="card border-light flex-fill   mx-auto">
-              <img class="card-img-top float-right" src="assets/Picture1.png" alt="Image not found">
-            </div>
-          </div>
-          <div id="talentDiv" style="display:none">
-          <div class="card border-light flex-fill   mx-auto">
-            <img class="card-img-top float-right" src="assets/Picture2.png" alt="Image not found">
-          </div>
-        </div>
-        <div id="leadershipDiv" style="display:none">
-        <div class="card border-light flex-fill   mx-auto">
-          <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-        </div>
-      </div>
-      <div id="planningDiv" style="display:none">
-      <div class="card border-light flex-fill   mx-auto">
-        <img class="card-img-top float-right" src="assets/Picture4.png" alt="Image not found">
-      </div>
-    </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- STRATEGY AND PERFORMANCE SECTION -->
-    <a name="Strategy" />
-    <div class="jumbotron text-center jumbotron-image shadow" style="padding-top: 100px;background-color:grey">
-      <div class="container text-white">
-        <h1><b>Strategy And Performance</b></h1>
-      </div>
-    </div>
-
-      <!-- RIGHT HAND TEXT -->
-      <div class="card border-light mx-auto">
-        <div class="card-body">
-          <div class="row justify-content-center" >
-            <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-              <div class="card border-light flex-fill   mx-auto">
-                <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-              <div class="card border-light text-left flex-fill  mx-auto">
-                <div class="card-body">
-                  <h3 class="card-title" style="margin-bottom:30px">Design and Direct your future</h3>
-                  <p class="card-text"><b>Synergy</b><font style="color:red"><sup>5</sup></font> invests as much time needed to understand every aspect of your organization from the outset; to ensure that the strategy you put in place can and will achieve your organization’s business aims. We evaluate your operations, industry, customers, goals, values, and people, to deliver a customized strategy that directs your organization toward success.</p>
-                  <h3>How we deliver</h3>
-                  <ul>
-                    <li>Defining success</li>
-                    <li>Strategy development/implementation</li>
-                    <li>Customer experience</li>
-                    <li>Operational Planning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- LEFT HAND TEXT -->
+      <div >
+        <!-- LEFT HAND TEXT OUR SERVICES-->
         <div class="card border-light mx-auto">
           <div class="card-body">
             <div class="row justify-content-center" >
-              <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
+              <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
                 <div class="card border-light text-left flex-fill  mx-auto">
                   <div class="card-body">
-                    <h3 class="card-title" style="margin-bottom:30px">Align and execute your strategy</h3>
-                    <p class="card-text">Whether you look to <b>Synergy</b><font style="color:red"><sup>5</sup></font> to bring your existing strategy alive or to tap into the innovative ideas we bring to the strategy table, we help turn your boldest business ambitions into your day-to-day operational reality. We understand that leadership alone can’t drive the strategy. We’ll help articulate your business aspirations and ensure the right people and structures are in place to achieve them</p>
-                    <h3>Our focus areas</h3>
-                      <ul>
-                        <li>Organizational Design</li>
-                        <li>Operating Model</li>
-                        <li>Capacity Analysis (workload)</li>
-                        <li>Process redesign</li>
-                        <li>Organizational change management</li>
-                      </ul>
+                    <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Services:</h1>
+                        <h4 style="margin-bottom:30px">
+                            <ul>
+                              <li>
+                              Strategic direction and execution
+                            </li>
+                            <li>
+                              Diversity, Equity and Inclusion
+                            </li>
+                            <li>
+                              Talent Development
+                            </li>
+                            <li>
+                              Customer Centricity
+                            </li>
+                            <li>
+                              Start-up Businesses & strategic planning/execution
+                            </li>
+                          </ul>
+                        </h4>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
+              <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
                 <div class="card border-light flex-fill   mx-auto">
-                  <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
+                  <img class="card-img-top float-right" src="assets/our_services.png" alt="Image not found">
                 </div>
               </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT HAND TEXT -->
-          <div class="card border-light mx-auto">
-            <div class="card-body">
-              <div class="row justify-content-center" >
-                <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                  <div class="card border-light flex-fill   mx-auto">
-                    <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                  <div class="card border-light text-left flex-fill  mx-auto">
-                    <div class="card-body">
-                      <h3 class="card-title" style="margin-bottom:30px">Assess and performance improvement</h3>
-                      <p class="card-text">
-                        <b>Synergy</b><font style="color:red"><sup>5</sup></font> recognizes that a successful long-term business strategy results from continuously monitoring and adjusting performance along the way. We help your organization create a business strategy whose success can be reliably measured as it progresses and can adapt to change.  Additionally, we equip your leaders the ability to continue to assess and improve the business strategy, long after we’re gone
-                      </p>
-                      <h3>What we bring</h3>
-                      <ul>
-                        <li>Business performance measurement</li>
-                        <li>Operational Effectiveness </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-
-    <!-- TALENT DEVELOPMENT SECTION -->
-    <a name="Talent" />
-    <div class="jumbotron text-center jumbotron-image shadow" style="padding-top: 100px;background-color:grey">
-      <div class="container text-white">
-        <h1><b>Talent Development</b></h1>
-      </div>
-    </div>
-
-      <!-- RIGHT HAND TEXT -->
-      <div class="card border-light mx-auto">
-        <div class="card-body">
-          <div class="row justify-content-center" >
-            <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-              <div class="card border-light flex-fill   mx-auto">
-                <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-              <div class="card border-light text-left flex-fill  mx-auto">
-                <div class="card-body">
-                  <h3 class="card-title" style="margin-bottom:30px">Design and Direct your future</h3>
-                  <p class="card-text"><b>Synergy</b><font style="color:red"><sup>5</sup></font> invests as much time needed to understand every aspect of your organization from the outset; to ensure that the strategy you put in place can and will achieve your organization’s business aims. We evaluate your operations, industry, customers, goals, values, and people, to deliver a customized strategy that directs your organization toward success.</p>
-                  <h3>How we deliver</h3>
-                  <ul>
-                    <li>Defining success</li>
-                    <li>Strategy development/implementation</li>
-                    <li>Customer experience</li>
-                    <li>Operational Planning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
             </div>
           </div>
         </div>
-        <!-- LEFT HAND TEXT -->
-        <div class="card border-light mx-auto">
-          <div class="card-body">
-            <div class="row justify-content-center" >
-              <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                <div class="card border-light text-left flex-fill  mx-auto">
-                  <div class="card-body">
-                    <h3 class="card-title" style="margin-bottom:30px">Align and execute your strategy</h3>
-                    <p class="card-text">Whether you look to <b>Synergy</b><font style="color:red"><sup>5</sup></font> to bring your existing strategy alive or to tap into the innovative ideas we bring to the strategy table, we help turn your boldest business ambitions into your day-to-day operational reality. We understand that leadership alone can’t drive the strategy. We’ll help articulate your business aspirations and ensure the right people and structures are in place to achieve them</p>
-                    <h3>Our focus areas</h3>
-                      <ul>
-                        <li>Organizational Design</li>
-                        <li>Operating Model</li>
-                        <li>Capacity Analysis (workload)</li>
-                        <li>Process redesign</li>
-                        <li>Organizational change management</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                <div class="card border-light flex-fill   mx-auto">
-                  <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT HAND TEXT -->
+
+          <!-- RIGHT HAND TEXT STRATEGIC-->
           <div class="card border-light mx-auto">
             <div class="card-body">
               <div class="row justify-content-center" >
-                <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                  <div class="card border-light flex-fill   mx-auto">
-                    <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
+                <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                  <div class="card border-light flex-fill mx-auto">
+                    <img class="card-img-top float-right" src="assets/strategic_direction.png" alt="Image not found">
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                  <div class="card border-light text-left flex-fill  mx-auto">
+                <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                  <div class="card border-light text-left flex-fill mx-auto">
                     <div class="card-body">
-                      <h3 class="card-title" style="margin-bottom:30px">Assess and performance improvement</h3>
-                      <p class="card-text">
-                        <b>Synergy</b><font style="color:red"><sup>5</sup></font> recognizes that a successful long-term business strategy results from continuously monitoring and adjusting performance along the way. We help your organization create a business strategy whose success can be reliably measured as it progresses and can adapt to change.  Additionally, we equip your leaders the ability to continue to assess and improve the business strategy, long after we’re gone
-                      </p>
-                      <h3>What we bring</h3>
-                      <ul>
-                        <li>Business performance measurement</li>
-                        <li>Operational Effectiveness </li>
-                      </ul>
+                      <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Strategic direction and execution:</h1>
+                      <h4 style="margin-bottom:30px">Every step of the way, <b>Synergy</b><font style="color:blue"><sup>5</sup></font> works closely with you to build business strategies that reflect your corporate values, while flexing where necessary to promote your enterprise goals.</h4>
+                      <h4 style="margin-bottom:10px;color:red">Our focus areas</h4>
+                      <h4>
+                        <ul>
+                          <li>
+                            Organizational Design
+                          </li>
+                          <li>
+                            Operating Model
+                          </li>
+                          <li>
+                            Capacity Analysis (workload)
+                          </li>
+                          <li>
+                            Process redesign
+                          </li>
+                          <li>
+                            Organizational change management
+                          </li>
+                        </ul>
+                      </h4> 
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- LEFT HAND TEXT DIVERSITY-->
+          <div class="card border-light mx-auto">
+            <div class="card-body">
+              <div class="row justify-content-center" >
+                <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                  <div class="card border-light text-left flex-fill mx-auto">
+                    <div class="card-body">
+                      <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Diversity, Equity and Inclusion:</h1>
+                      <h4 style="color: red;">Are you creating a sense of belonging for your employees?</h4>
+                      <h4 style="margin-bottom:30px"><b>Synergy</b><font style="color:blue"><sup>5</sup></font> helps organizations ground what they do in diversity, inclusion, equity and belonging. Our approach to creating a workplace where everyone feels they belong is not only critical to the success of people, and your business.</h4>
+                      <h4 style="margin-bottom:10px;color:red">Our focus areas</h4>
+                      <h4>
+                        <ul>
+                          <li>
+                            Commitment to a diverse environment
+                          </li>
+                          <li>
+                            Retention
+                          </li>
+                          <li>
+                            Inclusion
+                          </li>
+                          <li>
+                            Brand Reputation
+                          </li>
+                          <li>
+                            Financial performance 
+                          </li>
+                        </ul>
+                      </h4> 
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                  <div class="card border-light flex-fill   mx-auto">
+                    <img class="card-img-top float-right" src="assets/diversity.png" alt="Image not found">
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-    <!-- LEADERSHIP SECTION -->
-    <a name="Leadership" />
-    <div class="jumbotron text-center jumbotron-image shadow" style="padding-top: 100px;background-color:grey">
-      <div class="container text-white">
-        <h1><b>Leadership</b></h1>
+              <!-- RIGHT HAND TEXT TALENT -->
+          <div class="card border-light mx-auto">
+              <div class="card-body">
+                <div class="row justify-content-center" >
+                  <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                    <div class="card border-light flex-fill   mx-auto">
+                      <img class="card-img-top float-right" src="assets/talent.png" alt="Image not found">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                    <div class="card border-light text-left flex-fill  mx-auto">
+                      <div class="card-body">
+                        <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Talent Development:</h1>
+                        <h4 style="color: red;">Align your talent to your business strategy.</h4>
+                        <h4 style="margin-bottom:30px">In tough times, organizations that can adjust their strategies and align their people accordingly will thrive.  <b>Synergy</b><font style="color:blue"><sup>5</sup></font> helps you leverage your unique culture and employee abilities to create talent strategies that make business success consistent.</h4>
+                        <h4 style="margin-bottom:10px;color:red">Our focus areas</h4>
+                        <h4>
+                          <ul>
+                            <li>
+                              Culture and core values
+                            </li>
+                            <li>
+                              Competency modeling/career paths 
+                            </li>
+                            <li>
+                              Performance management
+                            </li>
+                            <li>
+                              Leadership Development
+                            </li>
+                            <li>
+                              Training strategy and design
+                            </li>
+                          </ul>
+                        </h4>           
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- LEFT HAND TEXT CUSTOMER-->
+          <div class="card border-light mx-auto">
+            <div class="card-body">
+              <div class="row justify-content-center" >
+                <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                  <div class="card border-light text-left flex-fill mx-auto">
+                    <div class="card-body">
+                      <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Customer Centricity:</h1>
+                      <h4 style="margin-bottom:30px">Loyal customers drive organic growth.  <b>Synergy</b><font style="color:blue"><sup>5</sup></font> will help your company become more than just "customer focused.”  In driving customer centricity,  we will help you to make customer engagement a core priority in your organizational culture, which will allow your leadership team the ability to build and sustain your customer-centric culture.</h4>
+                      <h4 style="margin-bottom:10px;color:red">Our focus areas</h4>
+                      <h4>
+                        <ul>
+                          <li>
+                            Understanding your Customer
+                          </li>
+                          <li>
+                            Designing engaging experience 
+                          </li>
+                          <li>
+                            Enabling and Empowering your workforce
+                          </li>
+                          <li>
+                            Delivering high standards of service
+                          </li>
+                          <li>
+                            Retain and grow customer base
+                          </li>
+                        </ul>
+                      </h4> 
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                  <div class="card border-light flex-fill   mx-auto">
+                    <img class="card-img-top float-right" src="assets/customer.svg" alt="Image not found">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              <!-- RIGHT HAND TEXT TALENT -->
+          <div class="card border-light mx-auto">
+              <div class="card-body">
+                <div class="row justify-content-center" >
+                  <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                    <div class="card border-light flex-fill   mx-auto">
+                      <img class="card-img-top float-right" src="assets/planning.png" alt="Image not found">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                    <div class="card border-light text-left flex-fill  mx-auto">
+                      <div class="card-body">
+                        <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Start-up Businesses & strategic planning/execution:</h1>
+                        <h4 style="margin-bottom:30px"><b>Synergy</b><font style="color:blue"><sup>5</sup></font> works collaboratively with startup companies, applying our expertise, and oﬀering guidance in all aspects of building a business.  From formulating strategy and developing business models, to crafting value propositions and optimizing pricing.</h4>
+                        <h4 style="margin-bottom:10px;color:red">Our focus areas</h4>
+                        <h4>
+                          <ul>
+                            <li>
+                              Idea Creation - Development
+                            </li>
+                            <li>
+                              Professional Business Plan
+                            </li>
+                            <li>
+                              Business Model Improvements
+                            </li>
+                            <li>
+                              Execution
+                            </li>
+                            <li>
+                              Project Management
+                            </li>
+                            <li>
+                              Continued Mentorship Post business launch
+                            </li>
+                          </ul>
+                        </h4>           
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
       </div>
-    </div>
 
-      <!-- RIGHT HAND TEXT -->
-      <div class="card border-light mx-auto">
-        <div class="card-body">
-          <div class="row justify-content-center" >
-            <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-              <div class="card border-light flex-fill   mx-auto">
-                <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-              <div class="card border-light text-left flex-fill  mx-auto">
-                <div class="card-body">
-                  <h3 class="card-title" style="margin-bottom:30px">Design and Direct your future</h3>
-                  <p class="card-text"><b>Synergy</b><font style="color:red"><sup>5</sup></font> invests as much time needed to understand every aspect of your organization from the outset; to ensure that the strategy you put in place can and will achieve your organization’s business aims. We evaluate your operations, industry, customers, goals, values, and people, to deliver a customized strategy that directs your organization toward success.</p>
-                  <h3>How we deliver</h3>
-                  <ul>
-                    <li>Defining success</li>
-                    <li>Strategy development/implementation</li>
-                    <li>Customer experience</li>
-                    <li>Operational Planning</li>
-                  </ul>
+
+      <!-- Get Started Section -->
+      <div class="jumbotron text-center text-white" style="background-color: var(--appcolor);padding-top:30px;padding-bottom:30px">
+        <h1 style="margin-bottom:30px;font-size:500%">Ready to get Started?</h1>
+        <a href="contact.html" class="btn">Schedule your 30 Minute Complimentary Consultation</a>
+      </div>
+
+      <!--WORD ART-->
+      <div >
+        <div class="card border-light mx-auto">
+          <div class="card-body">
+            <div class="row justify-content-center" >
+              <div class="col-xs-12 col-sm-12  col-md-12 col-lg-10 col-xl-8 d-flex" >
+                <div class="card border-light flex-fill   mx-auto">
+                  <img class="card-img-top float-right" src="assets/words.png" alt="Image not found">
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
-        <!-- LEFT HAND TEXT -->
-        <div class="card border-light mx-auto">
-          <div class="card-body">
-            <div class="row justify-content-center" >
-              <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                <div class="card border-light text-left flex-fill  mx-auto">
-                  <div class="card-body">
-                    <h3 class="card-title" style="margin-bottom:30px">Align and execute your strategy</h3>
-                    <p class="card-text">Whether you look to <b>Synergy</b><font style="color:red"><sup>5</sup></font> to bring your existing strategy alive or to tap into the innovative ideas we bring to the strategy table, we help turn your boldest business ambitions into your day-to-day operational reality. We understand that leadership alone can’t drive the strategy. We’ll help articulate your business aspirations and ensure the right people and structures are in place to achieve them</p>
-                    <h3>Our focus areas</h3>
-                      <ul>
-                        <li>Organizational Design</li>
-                        <li>Operating Model</li>
-                        <li>Capacity Analysis (workload)</li>
-                        <li>Process redesign</li>
-                        <li>Organizational change management</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                <div class="card border-light flex-fill   mx-auto">
-                  <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT HAND TEXT -->
-          <div class="card border-light mx-auto">
-            <div class="card-body">
-              <div class="row justify-content-center" >
-                <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                  <div class="card border-light flex-fill   mx-auto">
-                    <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                  <div class="card border-light text-left flex-fill  mx-auto">
-                    <div class="card-body">
-                      <h3 class="card-title" style="margin-bottom:30px">Assess and performance improvement</h3>
-                      <p class="card-text">
-                        <b>Synergy</b><font style="color:red"><sup>5</sup></font> recognizes that a successful long-term business strategy results from continuously monitoring and adjusting performance along the way. We help your organization create a business strategy whose success can be reliably measured as it progresses and can adapt to change.  Additionally, we equip your leaders the ability to continue to assess and improve the business strategy, long after we’re gone
-                      </p>
-                      <h3>What we bring</h3>
-                      <ul>
-                        <li>Business performance measurement</li>
-                        <li>Operational Effectiveness </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-    <!-- STARTUP SCETION -->
-    <a name="Startup" />
-    <div class="jumbotron text-center jumbotron-image shadow" style="padding-top: 100px;background-color:grey">
-      <div class="container text-white">
-        <h1><b>Start-up Business and Strategic Planning</b></h1>
       </div>
-    </div>
-
-      <!-- RIGHT HAND TEXT -->
-      <div class="card border-light mx-auto">
-        <div class="card-body">
-          <div class="row justify-content-center" >
-            <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-              <div class="card border-light flex-fill   mx-auto">
-                <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-              <div class="card border-light text-left flex-fill  mx-auto">
-                <div class="card-body">
-                  <h3 class="card-title" style="margin-bottom:30px">Design and Direct your future</h3>
-                  <p class="card-text"><b>Synergy</b><font style="color:red"><sup>5</sup></font> invests as much time needed to understand every aspect of your organization from the outset; to ensure that the strategy you put in place can and will achieve your organization’s business aims. We evaluate your operations, industry, customers, goals, values, and people, to deliver a customized strategy that directs your organization toward success.</p>
-                  <h3>How we deliver</h3>
-                  <ul>
-                    <li>Defining success</li>
-                    <li>Strategy development/implementation</li>
-                    <li>Customer experience</li>
-                    <li>Operational Planning</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- LEFT HAND TEXT -->
-        <div class="card border-light mx-auto">
-          <div class="card-body">
-            <div class="row justify-content-center" >
-              <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                <div class="card border-light text-left flex-fill  mx-auto">
-                  <div class="card-body">
-                    <h3 class="card-title" style="margin-bottom:30px">Align and execute your strategy</h3>
-                    <p class="card-text">Whether you look to <b>Synergy</b><font style="color:red"><sup>5</sup></font> to bring your existing strategy alive or to tap into the innovative ideas we bring to the strategy table, we help turn your boldest business ambitions into your day-to-day operational reality. We understand that leadership alone can’t drive the strategy. We’ll help articulate your business aspirations and ensure the right people and structures are in place to achieve them</p>
-                    <h3>Our focus areas</h3>
-                      <ul>
-                        <li>Organizational Design</li>
-                        <li>Operating Model</li>
-                        <li>Capacity Analysis (workload)</li>
-                        <li>Process redesign</li>
-                        <li>Organizational change management</li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                <div class="card border-light flex-fill   mx-auto">
-                  <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                </div>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- RIGHT HAND TEXT -->
-          <div class="card border-light mx-auto">
-            <div class="card-body">
-              <div class="row justify-content-center" >
-                <div class="col-xs-12 col-sm-10  col-md-6 col-lg-4 col-xl-4 d-flex" >
-                  <div class="card border-light flex-fill   mx-auto">
-                    <img class="card-img-top float-right" src="assets/Picture3.png" alt="Image not found">
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10  col-md-6  col-lg-6 col-xl-6 d-flex">
-                  <div class="card border-light text-left flex-fill  mx-auto">
-                    <div class="card-body">
-                      <h3 class="card-title" style="margin-bottom:30px">Assess and performance improvement</h3>
-                      <p class="card-text">
-                        <b>Synergy</b><font style="color:red"><sup>5</sup></font> recognizes that a successful long-term business strategy results from continuously monitoring and adjusting performance along the way. We help your organization create a business strategy whose success can be reliably measured as it progresses and can adapt to change.  Additionally, we equip your leaders the ability to continue to assess and improve the business strategy, long after we’re gone
-                      </p>
-                      <h3>What we bring</h3>
-                      <ul>
-                        <li>Business performance measurement</li>
-                        <li>Operational Effectiveness </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
 
     <!-- FOOTER -->
-    <div class="jumbotron text-left" style="margin-bottom:0">
-      COPYRIGHT &#169; 2020 SYNERGY5 - ALL RIGHTS RESERVED.
+    <div class="jumbotron text-left text-white" style="margin-bottom:0">
+      <div class="row" >
+        <div class="col-xs-12 col-sm-12  col-md-6  col-lg-6 col-xl-6" style="margin-bottom:30px;">
+          <h5>SUBSCRIBE</h5>
+          <h5>Gain valuable insight proven to help you streamline your business</h5>
+          <div class="row">
+            <div class="col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-7">
+              <form class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-sm my-0" type="button">SIGN UP</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6  col-md-4  col-lg-3 col-xl-3" style="margin-bottom:30px;">
+          <h5>Connect</h5>
+          <h5>XXXXX@synergy5.com </h5>
+          <a href="#" class="fab fa-instagram fa-2x" style="margin-top: 2px;margin-right: 30px; color:white"></a>
+          <a href="#" class="fab fa-twitter fa-2x" style="margin-top: 2px;margin-right: 30px; color:white"></a>
+          <a href="#" class="fab fa-facebook fa-2x" style="margin-top: 2px;margin-right: 30px;color:white"></a>
+        </div>
+        <div class="col-xs-6 col-sm-6  col-md-4  col-lg-3 col-xl-3">
+          <h5>COMPANY</h5>
+          <h5>About</h5>
+          <h5>Privacy Policy</h5>
+          <h5>Terms of Service</h5>
+        </div>
+      </div>
+      <div class = "text-center" style="margin-top:30px">
+      <u>COPYRIGHT &#169; 2019 FCO, LLC. ALL RIGHTS RESERVED</u>
+    </div>
     </div>
   </body>
 </html>

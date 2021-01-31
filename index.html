@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -14,8 +16,15 @@
 <!-- TODO  logo thumbnail-->
     <link rel="shortcut icon" href="assets/banner_logo_transparent.png">
     <link rel="icon" href="assets/banner_logo_transparent.png">
-
+<!---->
     <style>
+      h5,h4,h2,h2{
+        font-family: 'Montserrat', sans-serif;
+      }
+      h1{
+        font-family: 'Merriweather', serif;
+      }
+
     :root{
       --appcolor: #141754;
     }
@@ -87,6 +96,15 @@
       <!-- THE NAV LINKS -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto" >
+          <li class="nav-item" style="margin-right:15px;">
+            <a class="nav-link" style="color:white !important" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" style="color:white !important" href="index.html">About us</a>
+          </li>
+          <li class="nav-item" style="margin-right:15px;">
+            <a class="nav-link" style="color:white !important" href="contact.html">Contact us</a>
+          </li>
           <li class="nav-item">
             <a href="#" class="fab fa-instagram fa-2x" style="margin-top: 2px;margin-right: 30px; color:white"></a>
           </li>
@@ -102,7 +120,6 @@
 
 
     <!-- MAIN Section-->
-
       <div >
         <!-- LEFT HAND TEXT -->
         <div class="card border-light mx-auto">
@@ -124,37 +141,41 @@
                   <img class="card-img-top float-right" src="assets/strategy.png" alt="Image not found">
                 </div>
               </div>
-              </div>
             </div>
           </div>
+        </div>
 
-          <!-- Circle Section -->
-          <div class="jumbotron" style="background-image: url('assets/winbig.png');background-size: cover;">
-            <div class="row" >
-              <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 d-flex">
-                <div class="circle-container rounded-circle text-center justify-content-center align-self-center" >
-                  <div class="circle-container-text">
-                    <h1 class="text-center" style="margin-top: 50px"> Win & Win Big</h1>
-                    <hr width="25%" style="height:3px;background-color:black;margin-top:30px;margin-bottom: 20px" />
-                    <h5 class="text-left">For growth-minded organizations, in highly competitive sectors, seeking to augment complex workflows or to build scalable and sustainable infrastructure
-                    </br>Synergy5 is the strategic catalyst for systematic change leading to longevity and profitability.</h5>
-                  </div>
-                </div>
-            </div>
+          <!-- RIGHT HAND TEXT WIN BIG-->
+          <div class="container text-center">
+            <h1 style="margin-top:40px">Win & Win Big</h1>
           </div>
-          </div>
-
-          <!-- RIGHT HAND TEXT -->
           <div class="card border-light mx-auto">
             <div class="card-body">
               <div class="row justify-content-center" >
                 <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
-                  <div class="card border-light flex-fill   mx-auto">
-                    <img class="card-img-top float-right" src="assets/high_five.png" alt="Image not found">
+                  <div class="card border-light flex-fill mx-auto">
+                    <img class="card-img-top float-right" src="assets/winbig.png" alt="Image not found">
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
-                  <div class="card border-light text-left flex-fill  mx-auto">
+                  <div class="card border-light text-left flex-fill mx-auto">
+                    <div class="card-body align-items-center d-flex justify-content-center">
+                      <h4 style="margin-bottom:30px">For growth-minded organizations, in highly competitive sectors, seeking to build scalable and sustainable infrastructure. <b>Synergy</b><font style="color:blue"><sup>5</sup></font> is the catalyst for surpassing your profitability targets over the long run.</h4>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- LEFT HAND TEXT WE HAVE ONE GOAL-->
+          <div class="card border-light mx-auto">
+            <div class="card-body">
+              <div class="row justify-content-center" >
+                <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                  <div class="card border-light text-left flex-fill mx-auto">
                     <div class="card-body">
                       <h1 class="card-title font-weight-bold" style="margin-bottom:30px">We have one goal:<br/>
                         To help you achieve yours!</h1>
@@ -164,95 +185,111 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                  <div class="card border-light flex-fill   mx-auto">
+                    <img class="card-img-top float-right" src="assets/what_is_important.png" alt="Image not found">
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-
-            <!-- LEFT HAND TEXT -->
-            <div class="card border-light mx-auto">
+              <!-- RIGHT HAND TEXT OUR APPROACH -->
+          <div class="card border-light mx-auto">
               <div class="card-body">
                 <div class="row justify-content-center" >
+                  <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                    <div class="card border-light flex-fill   mx-auto">
+                      <img class="card-img-top float-right" src="assets/our_approach.png" alt="Image not found">
+                    </div>
+                  </div>
                   <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
                     <div class="card border-light text-left flex-fill  mx-auto">
                       <div class="card-body">
                         <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Our approach to driving value to your organization:</h1>
-                        <h4>
-                          <ul>
-                            <li style="margin-bottom:20px">
-                              Eliminates barriers to ensure operational excellence
+                      <h4>
+                        <ul>
+                          <li>
+                            Eliminates barriers to ensure operational excellence
+                          </li>
+                          <li>
+                            Identifies and builds existing capabilities at scale to drive structural change
+                          </li>
+                          <li>
+                            Strategically positions your talent, aligning to organizational strategic objectives
+                          </li>
+                          <li>
+                            Turns one-time customers into lifetime champions
+                          </li>
+                          <li>
+                            Recognizes opportunities to close gaps and gain market share
+                          </li>
+                        </ul>
+                      </h4>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+              <!-- LEFT HAND TEXT SARTUP-->
+          <div class="card border-light mx-auto">
+            <div class="card-body">
+              <div class="row justify-content-center" >
+                <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
+                  <div class="card border-light text-left flex-fill mx-auto">
+                    <div class="card-body">
+                      <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Synergy5’s Essential start up Framework</h1>
+                        <h4 style="margin-bottom:10px"><b>Our mission</b> is to encompass your vision and passion to create a culture and direction that creates a best in class experience for your customers.</h4>
+                        <h4 style="margin-bottom:30px">
+                            <ul>
+                              <li>
+                              Go To Market with Confidence
                             </li>
-                            <li style="margin-bottom:20px">
-                              Identifies and builds existing capabilities at scale to drive structural change
+                            <li>
+                              Strategy and Planning
                             </li>
-                            <li style="margin-bottom:20px">
-                              Strategically positions your talent, aligning to organizational strategic objectives
-                            </li>
-                            <li style="margin-bottom:20px">
-                              Turns one-time customers into lifetime champions
-                            </li>
-                            <li style="margin-bottom:20px">
-                              Recognizes opportunities to close gaps and gain market share
+                            <li>
+                              Build a Culture of Success
                             </li>
                           </ul>
                         </h4>
-                      </div>
+                        <a href="contact.html" class="btn">Schedule your 30 Minute Complimentary Consultation</a>
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
-                    <div class="card border-light flex-fill   mx-auto">
-                      <img class="card-img-top float-right" src="assets/meeting.png" alt="Image not found">
-                    </div>
-                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
+                  <div class="card border-light flex-fill   mx-auto">
+                    <img class="card-img-top float-right" src="assets/startup.png" alt="Image not found">
                   </div>
                 </div>
               </div>
-
-              <!-- RIGHT HAND TEXT -->
-              <div class="card border-light mx-auto">
-                <div class="card-body">
-                  <div class="row justify-content-center" >
-                    <div class="col-xs-12 col-sm-12  col-md-10 col-lg-5 col-xl-5 d-flex" >
-                      <div class="card border-light flex-fill   mx-auto">
-                        <img class="card-img-top float-right" src="assets/text_image.png" alt="Image not found">
-                      </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12  col-md-10  col-lg-7 col-xl-5 d-flex">
-                      <div class="card border-light text-left flex-fill  mx-auto">
-                        <div class="card-body">
-                          <h1 class="card-title font-weight-bold" style="margin-bottom:30px">Synergy5’s Essential start up Framework</h1>
-                          <h4 style="margin-bottom:10px"><b>Our mission</b> is to encompass your vision and passion to create a culture and direction that creates a best in class experience for your customers.</h4>
-                          <h4 style="margin-bottom:30px">
-                            <b>
-                              <ul>
-                              <li style="margin-bottom:20px">
-                                Go To Market with Confidence
-                              </li>
-                              <li style="margin-bottom:20px">
-                                Strategy and Planning
-                              </li>
-                              <li style="margin-bottom:20px">
-                                Build a Culture of Success
-                              </li>
-                            </ul>
-                          </b>
-                          </h4>
-                          <a href="contact.html" class="btn">Schedule your 30 Minute Complimentary Consultation</a>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-
-
+            </div>
+          </div>
       </div>
 
 
       <!-- Get Started Section -->
-      <div class="text-center text-white" style="background-color: var(--appcolor);padding-top:30px;padding-bottom:30px">
-        <h1 style="margin-bottom:30px">Ready to get Started?</h1>
+      <div class="jumbotron text-center text-white" style="background-color: var(--appcolor);padding-top:30px;padding-bottom:30px">
+        <h1 style="margin-bottom:30px;font-size:500%">Ready to get Started?</h1>
         <a href="contact.html" class="btn">Schedule your 30 Minute Complimentary Consultation</a>
+      </div>
+
+      <!--WORD ART-->
+      <div >
+        <div class="card border-light mx-auto">
+          <div class="card-body">
+            <div class="row justify-content-center" >
+              <div class="col-xs-12 col-sm-12  col-md-12 col-lg-10 col-xl-8 d-flex" >
+                <div class="card border-light flex-fill   mx-auto">
+                  <img class="card-img-top float-right" src="assets/words.png" alt="Image not found">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     <!-- FOOTER -->
@@ -264,7 +301,7 @@
           <div class="row">
             <div class="col-xs-10 col-sm-8 col-md-10 col-lg-8 col-xl-7">
               <form class="input-group">
-                <input type="text" class="form-control form-control-sm" placeholder="Your email" aria-label="Your email" aria-describedby="basic-addon2">
+                <input type="text" class="form-control form-control-sm" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                   <button class="btn btn-sm my-0" type="button">SIGN UP</button>
                 </div>
